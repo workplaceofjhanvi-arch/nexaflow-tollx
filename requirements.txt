@@ -1,0 +1,6 @@
+opencv-python
+numpy
+pytesseract
+paho-mqtt
+requests
+python-dotenv

@@ -1,2 +1,15 @@
-# nexaflow-tollx
-ExpressToll removes toll plaza traffic jams by checking vehicles 200 meters before they reach the toll gate. Using existing highway CCTV cameras, AI software, and low-cost microcontrollers, it separates valid vehicles from broken/low-balance tags early, allowing fast-moving traffic to pass through barrierless lanes without stopping.
+# NexaFlow: Pre-Gate AI Spatial Sorting for Barrierless Highway Tolling
+
+NexaFlow is an ultra-low-cost, computer-vision-based smart tolling solution designed to eliminate toll plaza congestion through early spatial vehicle pre-scanning and pre-gate exception sorting.
+
+## Key Features
+- **Adjacent-Lane Lock:** Eliminates false reads across neighboring lanes using Computer Vision.
+- **Tailgating Prevention:** Detects unsafe vehicle proximity before reaching toll gates.
+- **Pre-Gate Sorting:** Automatically routes invalid tags to an outer exception lane using smart LED signaling.
+
+## Setup & Running
+1. Install Python 3.9+
+2. Install dependencies:
+   `pip install -r requirements.txt`
+3. Run the application:
+   `python src/app.py`
