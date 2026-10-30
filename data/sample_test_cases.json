@@ -1,0 +1,32 @@
+[
+  {
+    "test_case_id": "TC_001",
+    "description": "Valid FASTag & Clear Safe Distance",
+    "vehicle_number": "HP01A1234",
+    "fastag_status": "VALID",
+    "balance_inr": 450,
+    "distance_meters": 5.2,
+    "expected_action": "ROUTE_GREEN_FAST_LANE",
+    "expected_led": "GREEN"
+  },
+  {
+    "test_case_id": "TC_002",
+    "description": "Low Balance / Blacklisted Tag",
+    "vehicle_number": "DL02C9876",
+    "fastag_status": "LOW_BALANCE",
+    "balance_inr": 10,
+    "distance_meters": 4.1,
+    "expected_action": "DIVERT_TO_EXCEPTION_LANE",
+    "expected_led": "RED"
+  },
+  {
+    "test_case_id": "TC_003",
+    "description": "Tailgating Violation Behind Commercial Truck",
+    "vehicle_number": "PB03X5555",
+    "fastag_status": "VALID",
+    "balance_inr": 200,
+    "distance_meters": 0.8,
+    "expected_action": "TAILGATE_ALERT_DIVERT",
+    "expected_led": "RED_FLASHING"
+  }
+]
